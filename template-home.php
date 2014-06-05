@@ -25,7 +25,7 @@ get_header(); ?>
 
 <div class="twocolumns">
 <div class="row">
-	<div id="content" class="col-md-8">
+	<div id="content" class="col-md-8 col-xs-12">
 	<div class="columns-holder">
 			<?php 
                 $newsCategoryID = 8;

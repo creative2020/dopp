@@ -19,7 +19,7 @@
 
 <div class="twocolumns">
 <div class="row">
-	<div id="content-page" class="col-md-8 col-sm-12">
+	<div id="content-page" class="col-md-8 col-sm-12 col-xs-12">
 		<div class="columns-holder">
 			<?php if(have_posts()): ?>
 			<?php while(have_posts()): the_post(); ?>
@@ -33,7 +33,7 @@
 			<?php endif; ?>
 		</div>
 	</div>
-	<div class="col-md-3 col-sm-12">
+	<div class="col-md-3 col-sm-12 col-xs-12">
 	<?php get_sidebar(); ?>
 	</div>
 </div>

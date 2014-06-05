@@ -36,11 +36,70 @@
                              'theme_location' => 'top_nav',
                              'items_wrap' => '<ul>%3$s</ul>') ); ?>
                     </div>
-                    <div class="hidden-xs"
+                    <div class="hidden-xs">
                     <?php if(has_nav_menu('primary'))
                         wp_nav_menu( array('container' => 'nav','container_id' => 'nav',
                              'theme_location' => 'primary',
                              'items_wrap' => '<ul>%3$s</ul>',
                              'walker' => new Custom_Walker_Nav_Menu) ); ?>
+                    </div>
+                    
                 </header>
+                <div id="mobile-nav" class="visible-xs">
+                    <!-- Single button -->
+                            <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MENU</a>
+        </div>
+        <div class="navbar-collapse collapse in" style="height: auto;">
+          
+            
+              
+<?php
+
+$defaults = array(
+	'theme_location'  => '',
+	'menu'            => 'Mobile',
+	'container'       => '',
+	'container_class' => '',
+	'container_id'    => '',
+	'menu_class'      => 'nav navbar-nav',
+	'menu_id'         => '',
+	'echo'            => true,
+	'fallback_cb'     => 'wp_page_menu',
+	'before'          => '',
+	'after'           => '',
+	'link_before'     => '',
+	'link_after'      => '',
+	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+	'depth'           => 0,
+	'walker'          => ''
+);
+
+echo wp_nav_menu( $defaults );
+
+?>
+            
+          
+          
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+                    
+<!--
+                    <div class="btn btn-lg btn-block dropdown">
+                        <button class="btn btn-primary btn-block btn-lg">Home</button>
+                        <button class="btn btn-primary btn-block btn-lg">Businesses</button>
+                    </div>
+-->
+                    
+                    
+                    </div>
                 <div id="main" class="col-md-12">

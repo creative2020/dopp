@@ -80,6 +80,11 @@ body{
 	color:#010a12;
 	background:#fff url(images/bg-body.jpg) no-repeat 50% 166px;
 }
+@media (min-width: 88px) and (max-width: 768px) { /*open media*/
+body {
+    background:none;
+}
+}/*close media*/
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display:block;}
 figure{
 	margin:0;
@@ -364,9 +369,7 @@ li .menu-blue a:hover {
 
 .social-networks .twitter a{background-position:-198px -250px;}
 .social-networks .twitter a:hover{background-position:-132px -250px;}
-.twocolumns{
-	padding:0 0 0 0;
-}
+
 #content,
 #content-page {
 	float:left;

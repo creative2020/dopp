@@ -2,7 +2,7 @@
 
 <div class="twocolumns">
 <div class="row">
-	<div id="content-page" class="col-md-12">
+	<div id="content-page" class="col-md-12 col-xs-12">
 		<div class="columns-holder">
 			<?php //global $post;
 			
@@ -62,7 +62,7 @@ while(have_posts()): the_post();
 				};
 		
 // display html
-		echo '<div class="business-list">'.
+		echo '<div class="business-list biz-mobile">'.
  		'<div class="row">'.
 		  '<div class="col-md-4 col-xs-12">'.
 		  	'<a href="' . $permalink . '">'.

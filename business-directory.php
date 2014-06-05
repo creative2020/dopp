@@ -22,7 +22,7 @@ get_header(); ?>
 <?php endif; ?>
 <div class="twocolumns">
 <div class="row">
-	<div id="business-content" class="col-md-8 col-sm-12">
+	<div id="business-content" class="col-md-8 col-sm-12 col-xs-12">
 		<div class="columns-holder">
             <?php if(have_posts()): ?>
                 <?php while(have_posts()): the_post(); ?>

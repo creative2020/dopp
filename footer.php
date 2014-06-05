@@ -1,0 +1,27 @@
+<div class="footer">
+<div class="row">
+<div class="col-md-4 col-sm-12">©2014 Downtown Overland Park Partnership, Inc. </div>
+<div class="col-md-4 col-sm-12 pull-left"><span class="glyphicon glyphicon-info-sign"></span> 7315 W. 79th Street, Overland Park KS 66204 </div>
+<div class="col-md-2 col-sm-12 pull-right"><span class="glyphicon glyphicon-earphone"></span> (913) 642-2222</div>
+</div>
+
+</div>
+</div>
+</div>
+    <?php wp_footer(); ?>
+    <!-- 2020 beta tracking -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9064605-17', 'downtownop.org');
+  ga('send', 'pageview');
+
+</script>
+<!-- 2020 end tracking -->
+    
+    
+</body>
+</html>	

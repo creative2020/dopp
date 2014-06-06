@@ -1,5 +1,7 @@
 /********************** media mobile start **********************/
-@media (max-width: 768px) { 
+
+@media screen and (max-width: 768px) {
+    
 #main {
     padding:0px;
     margin:0px;
@@ -7,7 +9,6 @@
 .twocolumns {
     margin-right:15px;
 }
-
 .news-img {
     display:none;
 }
@@ -15,9 +16,6 @@
     color:white;
     text-decoration:none;
     background-color:#147000;
-}
-.nav > li > a {
-    
 }
 .mobile-menu {
     padding:15px;
@@ -31,7 +29,7 @@
     text-decoration:none;
 }
 .navbar-toggle {
-    border-color: #21B102 !important;
+    border-color:#21B102;
 }
 .icon-bar {
     background-color: white !important;
@@ -67,11 +65,9 @@
 }
 select.dopplist {
     width:100% !important;
-    
 }
 #content-page, #content {
     margin:0px !important;
-    
 }
 .search-bar {
     float:none;
@@ -88,5 +84,11 @@ select.dopplist {
 .biz-mobile, .biz-search {
     margin:0 0 0 15px;
 }
-
-/******************************************************************/ }
+.ad {
+    text-align:center;
+}
+.promo-link {
+    display:none;
+}
+}
+/******************************************************************/

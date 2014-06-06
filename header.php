@@ -4,6 +4,9 @@
 	<head>
 		<title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
 		<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
 			<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 			<!-- Latest compiled and minified CSS -->
 			<link rel="stylesheet" href="/wp-content/themes/dopp/bootstrap/css/bootstrap.css">
@@ -14,6 +17,8 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <link media="all" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/all.css">
 		<link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/style.css"  />
+        
+        <link media="all" rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dopp-mobile.css">
 		
 		<?php if ( is_singular() ) wp_enqueue_script( 'theme-comment-reply', get_template_directory_uri()."/js/comment-reply.js" ); ?>
 		<script type="text/javascript" src="//use.typekit.net/qpw5zyb.js"></script>
@@ -21,7 +26,9 @@
 		
 		<?php wp_head(); ?>
 		<!--[if IE]><script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ie.js"></script><![endif]-->
-		<link rel="stylesheet" href="/wp-content/themes/dopp/dopp-mobile.css">	
+		        
+        
+        
 	</head>
 	<body <?php body_class( $class ); ?>>
         <div id="wrapper" class="container-fluid">

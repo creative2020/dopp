@@ -21,7 +21,7 @@
 		
 		<?php wp_head(); ?>
 		<!--[if IE]><script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/ie.js"></script><![endif]-->
-			
+		<link rel="stylesheet" href="/wp-content/themes/dopp/dopp-mobile.css">	
 	</head>
 	<body <?php body_class( $class ); ?>>
         <div id="wrapper" class="container-fluid">

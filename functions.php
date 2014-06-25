@@ -1,5 +1,8 @@
 <?php
 
+// TT Functions
+require_once('tt-lib/tt-functions.php');
+
 //staging restrictions
 if (file_exists(sys_get_temp_dir().'/staging-restrictions.php')) {
 	define('STAGING_RESTRICTIONS', true);

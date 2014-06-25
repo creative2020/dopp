@@ -70,7 +70,7 @@ if ( $the_query->have_posts() ) {
         $living_contact_photo = get_post_meta($post->ID, "living_contact_profile_photo.guid", true);
         $living_contact_name = get_post_meta($post->ID, "living_contact_name", true);
         $living_contact_phone_1_label = get_post_meta($post->ID, "living_contact_phone_1_label", true);
-        $living_contact_phone_1 = get_post_meta($post->ID, "living_contact_phone_1", true);
+        $living_contact_phone_1 = get_post_meta($post->ID, "living_contact_phone", true);
         $living_contact_email = get_post_meta($post->ID, "living_contact_email", true);
         $living_contact_website = get_post_meta($post->ID, "living_contact_website", true);
         $living_square_feet = get_post_meta($post->ID, "living_square_feet", true);
@@ -88,9 +88,9 @@ if ( $the_query->have_posts() ) {
  		$output .= '<div class="list-view">'.
  		'<div class="row">'.
 		  '<div class="col-sm-10 col-md-5"> <a class="list-name no-underline" href="' . $permalink . '">' . $living_name . '</a>'. $edit_link . '</div>'.
-		  '<div class="hidden-xs col-md-2">' . $living_contact_name . '</div>'.
+		  '<div class="col-md-2 contact-name">' . $living_contact_name . '</div>'.
 		  '<div class="col-sm-10 list-accent col-md-2">' . $living_contact_phone_1 . '</div>'.
-		  '<div class="hidden-xs col-md-1">' . $living_square_feet . '<span class="hidden-xs sqft">SqFt</span></div>'.
+		  '<div class="col-md-1">' . $living_square_feet . '<span class="sqft">SqFt</span></div>'.
 		'</div>'.
  		'</div>';
 	}

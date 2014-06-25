@@ -19,6 +19,17 @@ require_once ('tt-commercial.php');
 // require_once ('tt-cpt.php');
 
 
+// Custom CSS
+add_action('wp_enqueue_scripts','tt_custom_css');
+add_action('admin_enqueue_scripts','tt_custom_css');
+function tt_custom_css() {
+	wp_register_style('tt_menu_tb_style', get_template_directory_uri() . '/tt-lib/tt-style-print.css');
+	wp_enqueue_style('tt_menu_tb_style');
+}
+
+
+
+
 
 // 2020 DOPP Functions
 ////////////////////////////////////////////////////////////// bootstrap icons

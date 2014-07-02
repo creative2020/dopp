@@ -127,7 +127,7 @@
 					echo '<p>' . do_shortcode( '[codepeople-post-map width="685" height="200"]' ) . '</p>';							
 			
 			?>
-</div>
+</div></div>
 	
 	<div class="col-md-3 col-sm-12">
 

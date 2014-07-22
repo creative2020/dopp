@@ -1,9 +1,6 @@
 <div class="footer">
 <div class="row">
-<div class="col-md-4 col-sm-12">©2014 Downtown Overland Park Partnership, Inc. </div>
-<div class="col-md-4 col-sm-12 pull-left"><span class="glyphicon glyphicon-info-sign"></span> 7315 W. 79th Street, Overland Park KS 66204 </div>
-<div class="col-md-2 col-sm-12 pull-right"><span class="glyphicon glyphicon-earphone"></span> (913) 642-2222</div>
-</div>
+<div class="col-md-12 col-sm-12">©2014 Downtown Overland Park Partnership, Inc. | <a href="/terms-conditions">Terms and Conditions | </a><span class="glyphicon glyphicon-earphone"></span> (913) 642-2222 <span class="glyphicon glyphicon-info-sign"></span> 7315 W. 79th Street, Overland Park KS 66204</div>
 
 </div>
 </div>

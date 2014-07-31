@@ -41,7 +41,7 @@ get_header(); ?>
 				<div class="news-img" style="background: url('<?php echo $bg_img[0]; ?>');"></div>
 				
 				<?php endif; ?>
-				<h3><?php the_title(); ?></h3>
+				<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 				<?php the_excerpt(); ?>
 				<p><?php echo do_shortcode('[icon name="info-sign"]'); ?> <a class="link" href="<?php the_permalink(); ?>">More</a></p>
 				<?php endwhile; ?>
@@ -69,7 +69,7 @@ get_header(); ?>
 			<?php wp_reset_query(); ?>
 		</div>
 	</div>
-	<div class="col-md-3">
+	<div class="col-md-3 col-sm-12 col-xs-12">
 	<?php get_sidebar(); ?>
 	</div>
 </div>

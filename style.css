@@ -628,7 +628,8 @@ p.living-type {
 }
 .article-info {
 	min-height: 175px;
-	margin:0 0 0 175px;
+	margin:0 0 0 0;
+    padding:0 1.0em;
 }
 .img-cir {
 	overflow: hidden;

@@ -34,7 +34,7 @@
 			?>
 			
 			<div class="article-wrap">
-					<div class="post-img pull-left img-cir-container">
+					<div class="post-img pull-left img-cir-container hidden-xs hidden-sm">
 					<img class="" src="<?php echo $post_img; ?>" width="140px" height="140px"></div>
 				
 				<div class="article-info">

@@ -2,7 +2,7 @@
 
 <div class="twocolumns">
 <div class="row">
-	<div id="content" class="col-md-8 col-sm-12">
+	<div id="content" class="col-md-8 col-sm-12 col-xs-12">
 		<div class="columns-holder">
 			<?php if(have_posts()): ?>
 			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -34,7 +34,7 @@
 			?>
 			
 			<div class="article-wrap">
-					<div class="post-img pull-left img-cir-container">
+					<div class="post-img pull-left img-cir-container hidden-xs">
 					<img class="" src="<?php echo $post_img; ?>" width="140px" height="140px"></div>
 				
 				<div class="article-info">
@@ -61,7 +61,7 @@
 			<?php endif; ?>
 		</div>
 	</div>
-	<div class="col-md-3 col-sm-12">
+	<div class="col-md-3 col-sm-12 col-xs-12">
 		<?php get_sidebar(); ?>
 	</div>
 </div>

@@ -6,6 +6,7 @@
 		<?php
 			global $post;
 			$post_id = get_the_ID();
+            $post_info = get_post($post_id);
 			$permalink = get_permalink( $id );
 			$living_name = get_post_meta($post->ID, "living_name", true);
 	        $living_img1 = get_post_meta($post->ID, "living_image_1.guid", true);
@@ -13,7 +14,7 @@
 	        $living_img3 = get_post_meta($post->ID, "living_image_3.guid", true);
 	        $living_img4 = get_post_meta($post->ID, "living_image_4.guid", true);
 	        $living_img5 = get_post_meta($post->ID, "living_image_5.guid", true);
-			$living_desc = get_the_content();
+			$living_desc = get_the_content($post->ID);
 			$living_add1 = get_post_meta($post->ID, "living_add_1", true);
 	        $living_add2 = get_post_meta($post->ID, "living_add_2", true);
 	        $living_city = get_post_meta($post->ID, "living_city", true);
@@ -46,7 +47,8 @@
 							    echo '';
 							};
 			/////////////// Desc
-			echo the_content();				
+			echo '<div class="living-content">' . $post_info->post_content . '</div>';
+            //print_r($post_info);
 							
 							
 							

@@ -32,6 +32,7 @@
 			<p><?php _e('Sorry, but you are looking for something that isn\'t here.', 'base'); ?></p>
 			<?php endif; ?>
 		</div>
+        <?php get_template_part( 'ad', 'spot-b' ); ?>
 	</div>
 	<div class="col-md-3 col-sm-12 col-xs-12">
 	<?php get_sidebar(); ?>

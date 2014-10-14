@@ -738,6 +738,13 @@ p.living-type {
 .ad {
     display:block;
 }
+.ad-leaderboard-b {
+    margin:0 15px 0 -15px;
+}
+.ad-leaderboard-b img {
+    background-color:#ccc;
+    min-height:75px;
+}
 .search-bar {
     width:30%;
     float:right;

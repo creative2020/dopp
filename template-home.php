@@ -68,10 +68,13 @@ get_header(); ?>
 			<?php  endif; ?>
 			<?php wp_reset_query(); ?>
 		</div>
+        <?php get_template_part( 'ad', 'spot-b' ); ?> 
 	</div>
+       
 	<div class="col-md-3 col-sm-12 col-xs-12">
 	<?php get_sidebar(); ?>
 	</div>
+    
 </div>
 </div>
 <?php get_footer(); ?>

@@ -4,7 +4,7 @@
                     
                     
     <?php 
-        $post_id = '2917'; //2917 is DEV, 4126 is live
+        $post_id = '4126'; //2917 is DEV, 4126 is live
         $post_status = get_post_status( $post_id ); 
         $featured_img = get_post_thumbnail_id( $post_id );
         $ad_2_img = wp_get_attachment_url( $featured_img );

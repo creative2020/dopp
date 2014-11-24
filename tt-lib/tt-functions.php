@@ -574,8 +574,15 @@ function dopp_ad1 ( $atts ) {
 		), $atts )
 	);
 //html
+    $post_status = get_post_status( $id );
+    
+    if ( $post_status == 'publish' ) {
  
 echo '<div class="ad">',
 	    '<a href="' . $link . '" target="' . $target . '"><img src="' . $url . '" width="255px"></a>',
     '</div>';
+        
+    } else {
+        // do nothing
+    }
 }

@@ -73,7 +73,7 @@
 					'<div class="business-info-bar">';
 					if(!empty($business_www)) {
 							echo '<div class="business-www col-md-3 pull-left">',
-						'<a href="http://' . $business_www . '" target="_blank"><span class="glyphicon glyphicon-globe"></span> Website</a></div>';
+						'<a href="' . $business_www . '" target="_blank"><span class="glyphicon glyphicon-globe"></span> Website</a></div>';
 							}
 					if(!empty($business_fb)) {
 							echo '<div class="business-fb col-md-3">',

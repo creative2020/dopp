@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<div class="visual">
+    
 <div class="twocolumns">
 <div class="row">
 	<div id="content" class="col-md-8">
@@ -130,9 +132,9 @@
 			
 			?>
 </div>
-	
+	</div>
 	<div class="col-md-3 col-sm-12">
-
+		
     	<?php get_sidebar(); ?>
 	
 	</div>

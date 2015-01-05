@@ -565,24 +565,23 @@ function dopp_ad1 ( $atts ) {
 	// Attributes
 	extract( shortcode_atts(
 		array(
-			'id' => '2917',
-			'url' => '/wp-content/uploads/2014_smmc-website-ad.jpg',
+			'id' => '2917', //2917 is DEV, 4126 is live
+			'url' => '',
 			'size' => 'medium',
-			'link' => '#',
 			'target' => '_blank',
 			'alt' => '',
 		), $atts )
 	);
 //html
-    $post_status = get_post_status( $id );
-    
+    $post_status = get_post_status( $id ); 
+    $featured_img = get_post_thumbnail_id( $id );
+    $ad_1_img = wp_get_attachment_url( $featured_img );
+    $ad_1_link = get_post_meta( $id, 'ad_spot_1_link', true ); 
+
     if ( $post_status == 'publish' ) {
- 
-echo '<div class="ad">',
-	    '<a href="' . $link . '" target="' . $target . '"><img src="' . $url . '" width="255px"></a>',
-    '</div>';
+        echo '<a href="'.$ad_1_link.'" target="'.$target.'"><img src="'.$ad_1_img.'" width="255px"></a>';
+    }else{
         
-    } else {
         // do nothing
     }
 }

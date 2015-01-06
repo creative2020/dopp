@@ -529,7 +529,7 @@ function dopp_sidebar1 ( $atts ) {
 			<div class="promo-btn">
 			
 				<div class="">
-					<p>Signup for Newsletter<p>
+					<p>Sign up for E-news<p>
 				</div>
 			
 		</div>

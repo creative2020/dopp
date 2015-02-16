@@ -3,7 +3,7 @@
     
 <div class="twocolumns">
 <div class="row">
-	<div id="content" class="col-md-8">
+	<div id="content" class="col-sm-8 col-xs-12">
 		<div class="columns-holder">
 		<?php
 			global $post;
@@ -132,12 +132,14 @@
 			
 			?>
 </div>
-	</div>
-	<div class="col-md-3 col-sm-12">
-		
-    	<?php get_sidebar(); ?>
 	
-	</div>
-</div>
+    
+        <div class="col-sm-3 col-xs-12">
+
+            <?php get_sidebar(); ?>
+
+        </div>
+        
+    </div>
 
 <?php get_footer(); ?>

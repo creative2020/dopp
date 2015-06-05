@@ -1,4 +1,0 @@
-[10-Feb-2014 10:54:23 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/two020cr/public_html/dopp/wp-content/themes/dopp/taxonomy-living_type.php on line 1
-[10-Feb-2014 10:55:46 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/two020cr/public_html/dopp/wp-content/themes/dopp/taxonomy-living_type.php on line 1
-[10-Feb-2014 10:55:47 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/two020cr/public_html/dopp/wp-content/themes/dopp/taxonomy-living_type.php on line 1
-[05-Mar-2014 13:42:16 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/two020cr/public_html/dopp/wp-content/themes/dopp/index.php on line 1

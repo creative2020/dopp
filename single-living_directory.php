@@ -2,6 +2,7 @@
 <div class="visual">
     
 <div class="twocolumns">
+
 <div class="row">
 	<div id="content" class="col-sm-8 col-xs-12">
 		<div class="columns-holder">
@@ -9,7 +10,7 @@
 			global $post;
 			$post_id = get_the_ID();
             $post_info = get_post($post_id);
-			$permalink = get_permalink( $id );
+            $permalink = get_permalink($id);
 			$living_name = get_post_meta($post->ID, "living_name", true);
 	        $living_img1 = get_post_meta($post->ID, "living_image_1.guid", true);
 	        $living_img2 = get_post_meta($post->ID, "living_image_2.guid", true);
@@ -41,58 +42,42 @@
 	        $living_contact_website = get_post_meta($post->ID, "living_contact_website", true);
 			
 			echo '<div class="business-title"><h1 class="business-name-detail">' . $living_name . '</h1></div>';
+
 			/////////////// image
-			if ( '' != $living_img1 ) {
-							    // some code
+            if ( '' != $living_img1 )
 							    echo '<div class="business-img"><img src="' . $living_img1 . '" width="560px"></div>';
-							} else {
-							    echo '';
-							};
+
 			/////////////// Desc
 			echo '<div class="living-content">' . $post_info->post_content . '</div>';
-            //print_r($post_info);
 							
+            if ( '' != $living_phone_1 )
+                $icon_ph1 = '<span class="glyphicon glyphicon-earphone"></span><span class="data-label">' . $living_phone_1_label . '</span><span class="field">' . $living_phone_1 . '</span>';
 							
+            if ( '' != $living_phone_2 )
+                $icon_ph2 = '<span class="glyphicon glyphicon-earphone"></span><span class="data-label">' . $living_phone_2_label . '</span><span class="field">' . $living_phone_2 . '</span>';
 							
-			if ( '' != $living_phone_1 ) {
-							    // some code
-							    $icon_ph1 = '<span class="glyphicon glyphicon-earphone"></span><span class="data-label">' . $living_phone_1_label . '</span><span class="field">' . $living_phone_1 . '</span>';
-							} else {
-							    echo '';
-							};
-			if ( '' != $living_phone_2 ) {
-							    // some code
-							    $icon_ph2 = '<span class="glyphicon glyphicon-earphone"></span><span class="data-label">' . $living_phone_2_label . '</span><span class="field">' . $living_phone_2 . '</span>';
-							} else {
-							    echo '';
-							};
-			if ( '' != $living_contact_phone_1 ) {
-							    // some code
+            if ( '' != $living_contact_phone_1 )
 							    $icon_contact_ph1 = '<span class="glyphicon glyphicon-earphone"></span><span class="data-label">' . $living_contact_phone_1_label . '</span><span class="field">' . $living_contact_phone_1 . '</span>';
-							} else {
-							    echo '';
-							};								
+
 					////////////////// Address info
+            if(!empty($living_add1) || !empty($living_phone_1)) {
+                echo '<div class="business-add-info">';
+                if(!empty($living_add1)) echo '<div class="business-add1">' . $living_add1 . '</div>';
+                if(!empty($living_phone_1)) echo '<div class="business-ph">' . $icon_ph1 . '</div>';
+                echo '</div>';
+            }
 					
-					if(!empty($living_add1)) {
-							echo '<div class="business-add-info">',
-								'<div class="business-add1">' . $living_add1 . '</div>';
-							}
-					if(!empty($living_phone_1)) {
-							echo '<div class="business-ph">' . $icon_ph1 . '</div>';
-							}
-					echo '</div>';
 					////////////////// Property info
 					echo '<div class="living-info clearfix">',
 						'<p class="living-type clearfix bg-success"><span class="glyphicon glyphicon-home"></span> ' . $living_property_type . '</p>';
 						
-					if(!empty($living_price)) {
+                if(!empty($living_price))
 							echo '<p class="living-data"><span class="label"> ' . $living_price_label . '</span><span class="field">' . $living_price . '</span><span class="term">' . $living_price_term . '</span></p>';
-							}
-					if(!empty($icon_ph2)) {
+                if(!empty($icon_ph2))
 							echo '<p class="living-data">' . $icon_ph2 . '</p>';
-							}
+
 					echo '</div>';
+
 					////////////////// Info Bar
 					echo '<div class="business-info-bar">';
 					if(!empty($living_website)) {
@@ -104,6 +89,7 @@
 						'<a href="' . $business_fb . '" target="_blank"><i class="fa fa-facebook-square"></i> Facebook</a></div>';
 							}
 					echo '</div>';			
+
 					////////////////// Contact
 					echo '<div class="clearfix living-contact-info">';
 					
@@ -131,15 +117,16 @@
 					echo '<p>' . do_shortcode( '[codepeople-post-map width="685" height="200"]' ) . '</p>';							
 			
 			?>
-</div>
-	
-    
+        </div><!-- columns-holder -->
+    </div><!-- content -->
         <div class="col-sm-3 col-xs-12">
-
             <?php get_sidebar(); ?>
-
         </div>
+
+</div><!-- row -->
+
+</div><!-- twocolumns -->
         
-    </div>
+</div><!-- visual -->
 
 <?php get_footer(); ?>

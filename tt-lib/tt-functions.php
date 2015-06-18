@@ -378,32 +378,10 @@ echo $select;
 add_shortcode( 'search_bar2', 'search_bar2' );
 
 function search_bar2($taxonomies, $args){
-$args = array(
-	'show_option_all'	=> '',
-	'show_option_none'	=> '',
-	'meta_key' 			=> 'business_name',
-	'orderby' 			=> 'meta_value',
-	'order' 			=> 'ASC',
-	'show_count'        => 0,
-	'hide_empty'        => 1, 
-	'child_of'          => 0,
-	'exclude'           => '',
-	'echo'              => 0,
-	'selected'          => 0,
-	'hierarchical'      => 1, 
-	'name'              => 'business-type',
-	'id'                => '',
-	'class'             => 'postform',
-	'depth'             => 0,
-	'tab_index'         => 0,
-	'taxonomy'          => 'business_type',
-	'hide_if_empty'     => true,
-    'walker'            => ''
-);
-$categories = get_categories($args);
+  $categories = get_categories(array('taxonomy' => 'business_type'));
  
-  $select = "<select name='cat' id='cat' class='postform dopplist'>n";
-  $select.= "<option value='-1'>Select category</option>n";
+  $select = "<select name='cat' id='cat' class='postform dopplist'>".
+    "<option value='-1'>Select category</option>";
  
   foreach($categories as $category){
     if($category->count > 0){
